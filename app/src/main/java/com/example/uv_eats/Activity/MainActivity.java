@@ -2,15 +2,23 @@ package com.example.uv_eats.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-
-import com.example.uv_eats.R;
 
 public class MainActivity extends AppCompatActivity {
+
+    /*private ActivityLoginBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
+        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+
+
+        binding.ButtonRecoverPassword.setOnClickListener(v -> {
+
+        });
+    }*/
+
+
 }

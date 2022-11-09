@@ -3,6 +3,7 @@ package com.example.uv_eats.Activity;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.uv_eats.databinding.ActivityMainBinding;
 
 
@@ -23,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.ButtonRecoverPassword.setOnClickListener(v -> {
+
+        });
+
+        binding.ButtonSignIn.setOnClickListener(v -> {
 
         });
     }

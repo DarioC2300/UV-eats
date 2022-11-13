@@ -14,14 +14,28 @@
         android:theme="@style/Theme.Uv_Eats"
         tools:targetApi="31">
         <activity
-            android:name=".PrincipalTabMenuActivyty"
+            android:name="com.example.uv_eats.Activity.SignIn"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Activity.MainActivity"
+            android:name="com.example.uv_eats.Activity.RecoverPassword"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.uv_eats.Activity.PrincipalTabMenuActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.uv_eats.Activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,6 +1,8 @@
 package com.example.uv_eats.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,20 +19,30 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
         binding.ButtonLogin.setOnClickListener(v ->{
-            String username = binding.TextUser.toString();
-            String password = binding.TextPassword.toString();
+            String username = String.valueOf(binding.TextUser.getText());
+            String password = String.valueOf(binding.TextPassword.getText());
+            Toast.makeText(MainActivity.this, "Username:" + username + " Password:" + password.toString(), Toast.LENGTH_LONG).show();
         });
 
-        binding.ButtonRecoverPassword.setOnClickListener(v -> {
-
+        binding.ButtonRecoverPassword.setOnClickListener(v ->{
+            startScoreActivityRecoverPassword();
         });
 
-        binding.ButtonSignIn.setOnClickListener(v -> {
-
+        binding.ButtonSignIn.setOnClickListener(v ->{
+            startScoreActivitySignIn();
         });
     }
 
+
+    private void startScoreActivityRecoverPassword(){
+        Intent intent = new Intent(this, RecoverPassword.class);
+        startActivity(intent);
+    }
+
+    private void startScoreActivitySignIn(){
+        Intent intent = new Intent(this, SignIn.class);
+        startActivity(intent);
+    }
 
 }

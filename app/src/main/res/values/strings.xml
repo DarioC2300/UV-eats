@@ -5,4 +5,11 @@
     <string name="Button_Login">Iniciar Sesión</string>
     <string name="Sign_In">Registrarse</string>
     <string name="Recover_Password">Recuperar Contraseña</string>
+    <string name="InstructionsEmail">Ingrese su correo</string>
+    <string name="SendCode">Enviar correo </string>
+    <string name="InstructionsCode">Ingrese el codigo de validación</string>
+    <string name="ValidateCode">Validar código</string>
+    <string name="newPassword">Ingresa la nueva contraseña</string>
+    <string name="RepeatPassword">Repita la contraseña</string>
+    <string name="SavePassword">Guardar contraseña</string>
 </resources>

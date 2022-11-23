@@ -23,26 +23,31 @@ public class MainActivity extends AppCompatActivity {
             String username = String.valueOf(binding.TextUser.getText());
             String password = String.valueOf(binding.TextPassword.getText());
             Toast.makeText(MainActivity.this, "Username:" + username + " Password:" + password.toString(), Toast.LENGTH_LONG).show();
+            startPrincipalTab();
         });
 
         binding.ButtonRecoverPassword.setOnClickListener(v ->{
-            startScoreActivityRecoverPassword();
+            startRecoverPassword();
         });
 
         binding.ButtonSignIn.setOnClickListener(v ->{
-            startScoreActivitySignIn();
+            startSignIn();
         });
     }
 
 
-    private void startScoreActivityRecoverPassword(){
+    private void startRecoverPassword(){
         Intent intent = new Intent(this, RecoverPassword.class);
         startActivity(intent);
     }
 
-    private void startScoreActivitySignIn(){
+    private void startSignIn(){
         Intent intent = new Intent(this, SignIn.class);
         startActivity(intent);
     }
 
+    private void startPrincipalTab(){
+        Intent intent = new Intent(this, PrincipalTabMenuActivity.class);
+        startActivity(intent);
+    }
 }

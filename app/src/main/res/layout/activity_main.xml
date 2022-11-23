@@ -79,8 +79,8 @@
             android:layout_marginTop="20dp"
             android:text="@string/Sign_In"
             android:gravity="center_horizontal"
-            android:background="@color/white"
-            android:textColor="@color/Blue"
+            android:background="@color/Blue"
+            android:textColor="@color/white"
             android:padding="10dp"
             />
 

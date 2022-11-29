@@ -10,11 +10,12 @@
     <string name="InstructionsCode">Ingrese el codigo de validación</string>
     <string name="ValidateCode">Validar código</string>
     <string name="newPassword">Ingresa la nueva contraseña</string>
-    <string name="RepeatPassword">Repita la contraseña</string>
+    <string name="RepeatPassword">Confirmar contraseña</string>
     <string name="SavePassword">Guardar contraseña</string>
     <string name="Products">Productos</string>
     <string name="Cart">Carrito</string>
     <string name="Record">Historial</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Name">Nombre Completo</string>
+    <string name="Email">Correo electrónico</string>
+    <string name="Return">Regresar</string>
 </resources>

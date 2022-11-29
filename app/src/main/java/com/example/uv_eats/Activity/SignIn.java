@@ -1,5 +1,6 @@
 package com.example.uv_eats.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,5 +16,16 @@ public class SignIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivitySignInBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        binding.ButtonRegister.setOnClickListener(v -> {
+            startLogin();
+        });
+        binding.ButtonReturn.setOnClickListener(v -> {
+            startLogin();
+        });
+    }
+
+    private void startLogin(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
